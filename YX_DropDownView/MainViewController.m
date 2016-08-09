@@ -7,9 +7,9 @@
 //
 
 #import "MainViewController.h"
-#import "DropDownTView.h"
+#import "DropDownView.h"
 @interface MainViewController ()
-@property (nonatomic, strong) DropDownTView *dropDownTView;
+@property (nonatomic, strong) DropDownView *dropDownView;
 @property (nonatomic, strong) NSArray *comArr;
 @property (nonatomic, strong) NSArray *yearArr;
 @property (nonatomic, strong) NSArray *monthArr;
@@ -21,13 +21,6 @@
 
 @implementation MainViewController
 
--(DropDownTView *)dropDownTView{
-    
-    if (_dropDownTView == nil) {
-        _dropDownTView = [[DropDownTView alloc]initWithFrame:CGRectMake(0, 64, self.view.frame.size.width/4, self.view.frame.size.height/4) style:UITableViewStyleGrouped];
-    }
-    return _dropDownTView;
-}
 -(NSArray *)comArr{
     if (_comArr == nil) {
         _comArr = @[@[@"1990",@"1991",@"1992",@"1993"],
@@ -43,33 +36,37 @@
     }
     return _indexArr;
 }
-//-(NSArray *)yearArr{
-//    if (_yearArr == nil) {
-//        _yearArr = @[@"1990",@"1991",@"1992",@"1993"];
-//    }
-//    return _yearArr;
-//}
-//-(NSArray *)monthArr{
-//    if (_monthArr == nil) {
-//        _monthArr = @[@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10",@"11",@"12"];
-//    }
-//    return _monthArr;
-//}
-//
-//-(NSArray *)dayArr{
-//    if (_dayArr == nil) {
-//        _dayArr = @[@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10",@"11",@"12",@"13",@"14",@"15",@"16",@"17",@"18",@"19",@"20",@"21",@"22",@"23",@"24",@"25",@"26",@"27",@"28",@"29",@"30",@"31"];
-//    }
-//    return _dayArr;
-//}
+-(NSArray *)yearArr{
+    if (_yearArr == nil) {
+        _yearArr = @[@"1990",@"1991",@"1992",@"1993"];
+    }
+    return _yearArr;
+}
+-(NSArray *)monthArr{
+    if (_monthArr == nil) {
+        _monthArr = @[@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10",@"11",@"12"];
+    }
+    return _monthArr;
+}
 
+-(NSArray *)dayArr{
+    if (_dayArr == nil) {
+        _dayArr = @[@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10",@"11",@"12",@"13",@"14",@"15",@"16",@"17",@"18",@"19",@"20",@"21",@"22",@"23",@"24",@"25",@"26",@"27",@"28",@"29",@"30",@"31"];
+    }
+    return _dayArr;
+}
+- (DropDownView *)dropDownView{
+    if (_dropDownView == nil) {
+        _dropDownView = [[DropDownView alloc]initWithFrame:CGRectMake(0, 0, 100, 300)];
+        _dropDownView.center = self.view.center;
+    }
+    return _dropDownView;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.dropDownTView.comArr = self.comArr;
-    self.dropDownTView.indexArr = self.indexArr;
-    [self.view addSubview:self.dropDownTView];
-    
+    self.dropDownView.dataArr = self.yearArr;
+    [self.view addSubview:self.dropDownView];
     
 }
 

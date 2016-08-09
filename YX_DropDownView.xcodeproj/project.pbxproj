@@ -7,16 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F130A861D5968100062B318 /* DropDownView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F130A851D5968100062B318 /* DropDownView.m */; };
+		2F130A881D5970600062B318 /* drop.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F130A871D5970600062B318 /* drop.png */; };
 		2FFD68761D58764A00D230C4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FFD68751D58764A00D230C4 /* main.m */; };
 		2FFD68791D58764A00D230C4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FFD68781D58764A00D230C4 /* AppDelegate.m */; };
 		2FFD687F1D58764A00D230C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FFD687D1D58764A00D230C4 /* Main.storyboard */; };
 		2FFD68811D58764A00D230C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FFD68801D58764A00D230C4 /* Assets.xcassets */; };
 		2FFD68841D58764A00D230C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FFD68821D58764A00D230C4 /* LaunchScreen.storyboard */; };
 		2FFD688D1D58765D00D230C4 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FFD688C1D58765D00D230C4 /* MainViewController.m */; };
-		2FFD68901D5876B700D230C4 /* DropDownTView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FFD688F1D5876B700D230C4 /* DropDownTView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F130A841D5968100062B318 /* DropDownView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropDownView.h; sourceTree = "<group>"; };
+		2F130A851D5968100062B318 /* DropDownView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropDownView.m; sourceTree = "<group>"; };
+		2F130A871D5970600062B318 /* drop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drop.png; sourceTree = "<group>"; };
 		2FFD68711D58764A00D230C4 /* YX_DropDownView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YX_DropDownView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FFD68751D58764A00D230C4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2FFD68771D58764A00D230C4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -27,8 +31,6 @@
 		2FFD68851D58764A00D230C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FFD688B1D58765D00D230C4 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		2FFD688C1D58765D00D230C4 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		2FFD688E1D5876B700D230C4 /* DropDownTView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropDownTView.h; sourceTree = "<group>"; };
-		2FFD688F1D5876B700D230C4 /* DropDownTView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropDownTView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,12 +63,13 @@
 		2FFD68731D58764A00D230C4 /* YX_DropDownView */ = {
 			isa = PBXGroup;
 			children = (
+				2F130A871D5970600062B318 /* drop.png */,
 				2FFD68771D58764A00D230C4 /* AppDelegate.h */,
 				2FFD68781D58764A00D230C4 /* AppDelegate.m */,
 				2FFD688B1D58765D00D230C4 /* MainViewController.h */,
 				2FFD688C1D58765D00D230C4 /* MainViewController.m */,
-				2FFD688E1D5876B700D230C4 /* DropDownTView.h */,
-				2FFD688F1D5876B700D230C4 /* DropDownTView.m */,
+				2F130A841D5968100062B318 /* DropDownView.h */,
+				2F130A851D5968100062B318 /* DropDownView.m */,
 				2FFD687D1D58764A00D230C4 /* Main.storyboard */,
 				2FFD68801D58764A00D230C4 /* Assets.xcassets */,
 				2FFD68821D58764A00D230C4 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F130A881D5970600062B318 /* drop.png in Resources */,
 				2FFD68841D58764A00D230C4 /* LaunchScreen.storyboard in Resources */,
 				2FFD68811D58764A00D230C4 /* Assets.xcassets in Resources */,
 				2FFD687F1D58764A00D230C4 /* Main.storyboard in Resources */,
@@ -155,8 +159,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FFD68791D58764A00D230C4 /* AppDelegate.m in Sources */,
+				2F130A861D5968100062B318 /* DropDownView.m in Sources */,
 				2FFD688D1D58765D00D230C4 /* MainViewController.m in Sources */,
-				2FFD68901D5876B700D230C4 /* DropDownTView.m in Sources */,
 				2FFD68761D58764A00D230C4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,6 +310,7 @@
 				2FFD688A1D58764A00D230C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
