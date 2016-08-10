@@ -23,7 +23,7 @@
 
 -(NSArray *)comArr{
     if (_comArr == nil) {
-        _comArr = @[@[@"1990",@"1991",@"1992",@"1993"],
+        _comArr = @[@[@"1990",@"1991",@"1992",@"1993",@"1990",@"1991",@"1992",@"1993",@"1990",@"1991",@"1992",@"1993"],
                     @[@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10",@"11",@"12"],
 @[@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10",@"11",@"12",@"13",@"14",@"15",@"16",@"17",@"18",@"19",@"20",@"21",@"22",@"23",@"24",@"25",@"26",@"27",@"28",@"29",@"30",@"31"]
                     ];
@@ -57,7 +57,7 @@
 }
 - (DropDownView *)dropDownView{
     if (_dropDownView == nil) {
-        _dropDownView = [[DropDownView alloc]initWithFrame:CGRectMake(0, 0, 100, 300)];
+        _dropDownView = [[DropDownView alloc]initWithFrame:CGRectMake(30, 0, self.view.frame.size.width-60, 350)];
         _dropDownView.center = self.view.center;
     }
     return _dropDownView;
@@ -65,7 +65,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.dropDownView.dataArr = self.yearArr;
+    UIButton *bgBtn = [[UIButton alloc]initWithFrame:self.view.bounds];
+    bgBtn.backgroundColor = [UIColor colorWithRed:125/255.0 green:125/255.0 blue:125/255.0 alpha:0.7];
+    [self.view addSubview:bgBtn];
+    self.dropDownView.dataArr = self.comArr;
     [self.view addSubview:self.dropDownView];
     
 }
